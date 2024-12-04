@@ -1,0 +1,27 @@
+<div class="work-container">
+
+  
+    <!-- Work Content -->
+    <div class="work-content">
+      <h3>RECENT WORK</h3>
+      <div class="categories">
+        <span>Graphic Design</span>
+        <span>Apps</span>
+        <span>Software</span>
+      </div>
+  
+      <div class="work-grid">
+        <div
+          *ngFor="let work of works"
+          class="work-item"
+          [style.background-color]="hoveredWorkId === work.id ? work.color : '#f4f4f4'"
+          (mouseenter)="onMouseEnter(work.id)"
+          (mouseleave)="onMouseLeave()"
+        >
+          <h4>{{ work.title }}</h4>
+          <p *ngIf="hoveredWorkId === work.id">{{ work.category }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
