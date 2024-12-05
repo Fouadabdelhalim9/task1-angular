@@ -1,14 +1,10 @@
 <section>
-  <div class="row col-md-12">
-    <div class="col-md-2">
+  <div class="containerApp d-flex">
+    <div class="aside-contact">
       <app-aside></app-aside>
     </div>
-    <div class="col-md-10">
-      <div class="container d-flex justify-content-center align-items-center">
-        <div class="page-info col-12">
-          <router-outlet></router-outlet>
-        </div>
-      </div>
+    <div class="container-content">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </section>
