@@ -1,18 +1,57 @@
-.nav-link {
-  color: #000;
-  margin: 10px 0;
-  text-decoration: none;
-  font-weight: bold;
+.card-body{
+  transition: .5s;
+  margin: 5px 0px;
+  &:hover{
+ transform: scale(1.1);
+  }
+}
+.graphic{
+  border-bottom: 2px solid #2c98f0;
+}
+.graphic i{
+  font-size: 30px;
+color:  #2c98f0;
+}
+.webdesign{
+  border-bottom: 2px solid #ec5453;
+}
+.webdesign i{
+  font-size: 30px;
+color:  #ec5453;
+}
+.software{
+  border-bottom: 2px solid #f9bf3f;
+}
+.software i{
+  font-size: 30px;
+color:  #f9bf3f;
+}
+.application{
+  border-bottom: 3px solid #a84cb8;
+}
+.application i{
+  font-size: 30px;
+color:  #a84cb8;
 }
 
-.nav-link:hover {
-  color: #007bff;
+.aboutus{
+font-size: 10px;
 }
-
+.fw-bold{
+  font-size: 18px;
+}
+.fw-bold-content{
+  font-size: 15px;
+  line-height: 1.8;
+  color: #000000b3;
+}
+.card-body h5{
+  font-size: 12px !important;
+  box-shadow: 0 0 56px -8px #0000002b;
+}
 .card-body i {
   display: block;
   margin-bottom: 10px;
-  color: red;
 }
 
 .card-body h5 {

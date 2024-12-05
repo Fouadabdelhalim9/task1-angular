@@ -1,27 +1,25 @@
-<div class="work-container">
-
-  
-    <!-- Work Content -->
-    <div class="work-content">
-      <h3>RECENT WORK</h3>
-      <div class="categories">
-        <span>Graphic Design</span>
-        <span>Apps</span>
-        <span>Software</span>
-      </div>
-  
-      <div class="work-grid">
-        <div
-          *ngFor="let work of works"
-          class="work-item"
-          [style.background-color]="hoveredWorkId === work.id ? work.color : '#f4f4f4'"
-          (mouseenter)="onMouseEnter(work.id)"
-          (mouseleave)="onMouseLeave()"
-        >
-          <h4>{{ work.title }}</h4>
-          <p *ngIf="hoveredWorkId === work.id">{{ work.category }}</p>
-        </div>
-      </div>
-    </div>
+<div class="content">
+  <h6 class="mb-2">MY WORK</h6>
+  <h4 class="mb-2">RECENT WORK</h4>
+</div>
+<section class="container-card">
+  <ul class="nav nav-pills justify-content-start">
+    <li class="nav-item me-3 text-decoration-none">
+      <a routerLink="home">Graphic Design</a>
+    </li>
+    <li class="nav-item me-3 text-decoration-none">
+      <a routerLink="home">Apps</a>
+    </li>
+    <li class="nav-item me-3 text-decoration-none">
+      <a routerLink="home">Software</a>
+    </li>
+  </ul>
+  <div class="d-flex justify-content-between flex-wrap">
+    <div class="card card1" ></div>
+    <div class="card card2" ></div>
+    <div class="card card3" ></div>
+    <div class="card card4" ></div>
+    <div class="card card2" ></div>
+    <div class="card card3" ></div>
   </div>
-  
+</section>
